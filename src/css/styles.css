@@ -1,0 +1,35 @@
+* {
+  font-family: "Avenir", "arial";
+}
+
+/* ***** variables ***** */
+:root {
+  --header-height: 6rem;
+
+  /* margins */
+  --m-1: 1rem;
+  --m-1-25: 1.25rem;
+  --m-1-5: 1.5rem;
+
+  /* font and font size */
+  --main-font: "Avenir", "arial" monospace;
+  --secondary-font: "Avenir", "arial" monospace;
+  --xl-font: 4rem;
+  --normal-font: 1rem;
+  --small-font: 0.875rem;
+  --smaller-font: 0.8rem;
+  --h1-font: 2.25rem;
+  --h2-font: 1.75rem;
+  --h3-font: 1.25rem;
+
+  /* colors */
+  --background: #0a0a0a; /* Dark Black */
+  --primary-text: #ffffff; /* White */
+  --secondary-text: #b8b8b8; /* Light Gray */
+  --accent: #007bff; /* Blue */
+  --hover: #66a3ff; /* Light Blue */
+  --border: #333333; /* Dark Gray */
+  --light-accent: #3399ff; /* Light Blue */
+  --lighter-accent: #66b2ff; /* Lighter Blue */
+  --light-border: #444444; /* Slightly Lighter Gray */
+}
