@@ -1,5 +1,7 @@
 * {
-  font-family: "Avenir", "arial";
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 /* ***** variables ***** */
@@ -23,13 +25,41 @@
   --h3-font: 1.25rem;
 
   /* colors */
-  --background: #0a0a0a; /* Dark Black */
-  --primary-text: #ffffff; /* White */
-  --secondary-text: #b8b8b8; /* Light Gray */
-  --accent: #007bff; /* Blue */
-  --hover: #66a3ff; /* Light Blue */
-  --border: #333333; /* Dark Gray */
-  --light-accent: #3399ff; /* Light Blue */
-  --lighter-accent: #66b2ff; /* Lighter Blue */
-  --light-border: #444444; /* Slightly Lighter Gray */
+  --background: #1b2028;
+  --primary-text: #4b5975;
+  --secondary-text: #ccd6f6;
+  --accent: #23a9d5;
+  --hover-secondary: #a7a793;
+  --background-accent: #2a92af;
+  --secondary-accent: #6faad5;
+  --dark-text: #353e4c;
+  --highlight: #ffc107;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font);
+  line-height: 1.5;
+  background-color: var(--background);
+  color: var(--secondary-text);
+  counter-reset: section;
+}
+
+p {
+  color: var(--primary-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
 }
