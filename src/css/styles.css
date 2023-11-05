@@ -12,10 +12,11 @@
   /* font and font size */
   --main-font: "Avenir", "arial" monospace;
   --title-font: "Arial Black", Gadget, sans-serif;
-  --font-size-large: 4rem;
+  --font-size-large: 5rem;
   --font-size-medium: 2rem;
   --font-size-normal: 1rem;
   --font-size-small: 0.875rem;
+  --font-size-1--2: 1.2rem;
 
   /* colors */
   --color-background: #0f0e17;
@@ -93,8 +94,8 @@ body {
 }
 
 .main-heading {
-  font-size: var(--font-size-normal);
-  color: var(--color-heading);
+  font-size: var(--font-size-1--2);
+  color: var(--color-accent);
   margin-bottom: 0.5rem;
 }
 
@@ -110,11 +111,11 @@ body {
   font-size: var(--font-size-medium);
   font-weight: 400;
   color: var(--color-text);
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .intro-text {
-  font-size: var(--font-size-normal);
+  font-size: var(--font-size-1--2);
   color: var(--color-heading);
   max-width: 650px;
   margin-bottom: 4rem;
@@ -125,6 +126,7 @@ body {
 }
 
 .cta-btn {
+  width: 10rem;
   display: inline-block;
   background-color: var(--color-btn);
   color: var(--color-btn-text);
