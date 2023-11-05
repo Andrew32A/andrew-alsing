@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // social icons animation
   anime({
-    targets: ".socials a",
+    targets: ".socials",
     translateY: [50, 0],
     opacity: [0, 1],
     easing: "easeOutExpo",
