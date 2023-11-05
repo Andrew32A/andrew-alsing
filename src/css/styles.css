@@ -8,6 +8,7 @@
 :root {
   --header-height: 3rem;
   --nav-spacing: 1rem;
+  overflow-anchor: none;
 
   /* font and font size */
   --main-font: "Avenir", "arial" monospace;
