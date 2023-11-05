@@ -71,16 +71,25 @@ body {
 }
 
 /* ***** main content styling ***** */
-.main-content {
+#main-content {
   padding-top: calc(
     var(--header-height) + 2rem
   ); /* space for the fixed header */
+  position: relative;
+  padding: 0 150px;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 /* ***** home section ***** */
 .home-section {
-  text-align: center;
-  padding: 10rem 1rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .main-heading {
@@ -108,7 +117,6 @@ body {
   font-size: var(--font-size-normal);
   color: var(--color-heading);
   max-width: 650px;
-  margin: auto;
   margin-bottom: 4rem;
 }
 
@@ -116,7 +124,6 @@ body {
   color: var(--color-accent);
 }
 
-/* ***** call to action button ***** */
 .cta-btn {
   display: inline-block;
   background-color: var(--color-btn);
