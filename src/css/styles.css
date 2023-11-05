@@ -71,6 +71,39 @@ body {
   color: var(--color-accent);
 }
 
+/* ***** socials ***** */
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  right: 70px;
+  z-index: 100;
+  background: none;
+}
+
+.icon {
+  color: var(--color-nav);
+  font-size: 2rem;
+  margin: 5px;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #fff;
+}
+
+.socials::after {
+  content: "";
+  display: block;
+  height: 150px;
+  width: 0.1px;
+  background-color: var(--color-nav);
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ***** main content styling ***** */
 #main-content {
   padding-top: calc(
