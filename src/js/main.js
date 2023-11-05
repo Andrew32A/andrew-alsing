@@ -1,3 +1,26 @@
+/* ***** anime js animations ***** */
+document.addEventListener("DOMContentLoaded", () => {
+  // navigation links animation
+  anime({
+    targets: ".nav-item",
+    translateX: [-50, 0],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: anime.stagger(100),
+  });
+
+  // social icons animation
+  anime({
+    targets: ".socials a",
+    translateY: [50, 0],
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: anime.stagger(100, { start: 1000 }),
+  });
+});
+
 /* ***** scroll reveal animations ***** */
 const sr = ScrollReveal({
   distance: "100px",
