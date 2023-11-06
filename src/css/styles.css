@@ -45,6 +45,8 @@ body {
   position: fixed;
   width: 100%;
   padding: 1rem var(--nav-spacing);
+  padding-left: 5rem;
+  padding-right: 5rem;
   background-color: var(--color-background);
   z-index: 1000;
 }
@@ -62,7 +64,7 @@ body {
 .site-nav .nav-link {
   color: var(--color-nav);
   text-decoration: none;
-  font-size: var(--font-size-small);
+  font-size: var(--font-size-normal);
   font-weight: 400;
   transition: color 0.3s ease;
 }
