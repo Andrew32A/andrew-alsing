@@ -1,3 +1,31 @@
+const header = document.getElementsByClassName("site-header")[0];
+const nav = document.getElementsByClassName("site-nav")[0];
+let scrollHeight = 0;
+let width = window.innerWidth;
+
+// ***** show/hide nav on scroll *****
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+
+  if (scrollHeight > 140) {
+    header.classList.add("scroll-header");
+  } else if (scrollHeight < 140) {
+    header.classList.remove("scroll-header");
+  }
+
+  if (scrollHeight < scrollY) {
+    header.classList.add("hide-header");
+  } else {
+    header.classList.remove("hide-header");
+  }
+
+  if (window.innerWidth < 480 && window.scrollY < 80) {
+    header.classList.remove("hide-header");
+  }
+
+  scrollHeight = scrollY;
+});
+
 /* ***** anime js animations ***** */
 document.addEventListener("DOMContentLoaded", () => {
   // navigation links animation

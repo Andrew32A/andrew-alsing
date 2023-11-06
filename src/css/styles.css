@@ -48,6 +48,10 @@ body {
   color: var(--color-text);
 }
 
+.highlight {
+  color: var(--color-accent);
+}
+
 /* ***** header ***** */
 .site-header {
   position: fixed;
@@ -58,6 +62,9 @@ body {
   padding-right: 5rem;
   background-color: var(--color-background);
   z-index: 1000;
+  top: 0;
+  right: 0;
+  transition: top 0.6s;
 }
 
 .site-nav .nav-list {
@@ -81,6 +88,20 @@ body {
 .site-nav .nav-link:hover,
 .site-nav .nav-link:focus {
   color: var(--color-accent);
+}
+
+/* hide header on scroll */
+.hide-header {
+  top: -8rem;
+  right: 0;
+  transition: 0.6s;
+}
+
+.scroll-header {
+  height: 4.5rem;
+  background-color: var(--color-background);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 10px 30px -10px rgba(2, 12, 27, 0.7);
 }
 
 /* ***** socials ***** */
@@ -175,10 +196,6 @@ body {
   color: var(--color-heading);
   max-width: 650px;
   margin-bottom: 4rem;
-}
-
-.intro-text .highlight {
-  color: var(--color-accent);
 }
 
 .cta-btn {
