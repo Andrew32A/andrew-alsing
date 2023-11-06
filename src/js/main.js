@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 1200,
-    delay: anime.stagger(100),
+    delay: anime.stagger(100, { start: 2500 }),
   });
 
   // social icons animation
@@ -17,7 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 1200,
-    delay: anime.stagger(100, { start: 1000 }),
+    delay: anime.stagger(100, { start: 3000 }),
+  });
+
+  // name heading animation
+  anime({
+    targets: ".name-heading span",
+    opacity: [0, 1],
+    easing: "easeOutExpo",
+    duration: 600,
+    delay: anime.stagger(100),
   });
 });
 
@@ -30,16 +39,16 @@ const sr = ScrollReveal({
 
 if (window.innerWidth > 500) {
   sr.reveal(
-    `.home-section,
-     .main-heading,
-     .name-heading,
+    `
+    .main-heading,
      .subheading,
      .intro-text,
      .cta-btn`,
     {
       origin: "top",
       interval: 200,
-      distance: "40px",
+      distance: "10px",
+      delay: 1500,
     }
   );
 

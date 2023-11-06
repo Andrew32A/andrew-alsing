@@ -1,3 +1,11 @@
+/* imported fonts */
+@font-face {
+  font-family: "Nunito";
+  src: url("./fonts/Nunito-Regular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -11,7 +19,7 @@
   overflow-anchor: none;
 
   /* font and font size */
-  --main-font: "Avenir", "arial" monospace;
+  --main-font: "Nunito", Gadget, sans-serif;
   --title-font: "Arial Black", Gadget, sans-serif;
   --font-size-large: 5rem;
   --font-size-medium: 2rem;
@@ -43,6 +51,7 @@ body {
 /* ***** header ***** */
 .site-header {
   position: fixed;
+  font-family: Times, serif;
   width: 100%;
   padding: 1rem var(--nav-spacing);
   padding-left: 5rem;
@@ -173,7 +182,7 @@ body {
 }
 
 .cta-btn {
-  width: 10rem;
+  width: 10.5rem;
   display: inline-block;
   background-color: var(--color-btn);
   color: var(--color-btn-text);
