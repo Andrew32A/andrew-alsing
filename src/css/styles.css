@@ -85,11 +85,22 @@ body {
   background: none;
 }
 
+.socials > a {
+  text-decoration: none;
+  border-bottom: 0.1px solid transparent;
+  transition: border-bottom-color 0.3s ease, color 0.3s ease;
+}
+
 .icon {
   color: var(--color-nav);
   font-size: 2rem;
   margin: 5px;
   transition: color 0.3s ease;
+}
+
+.socials > a:hover,
+.socials > a:focus {
+  border-bottom-color: var(--color-accent);
 }
 
 .icon:hover {
