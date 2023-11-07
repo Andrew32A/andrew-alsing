@@ -30,7 +30,7 @@
   /* colors */
   --color-background: #0f0e17;
   --color-text: #a7a9be;
-  --color-heading: #6b6d91;
+  --color-dim: #6b6d91;
   --color-accent: #00d4ff;
   --color-btn: #33304b;
   --color-btn-text: #00d4ff;
@@ -46,6 +46,22 @@ body {
   line-height: 1.5;
   background-color: var(--color-background);
   color: var(--color-text);
+}
+
+section {
+  margin: 0 auto;
+  padding: 100px 0;
+  max-width: 1000px;
+  display: block;
+}
+
+.headings {
+  width: 100%;
+  color: var(--color-text);
+  font-family: var(--title-font);
+  font-size: var(--font-size-medium);
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .highlight {
@@ -193,7 +209,7 @@ body {
 
 .intro-text {
   font-size: var(--font-size-1--2);
-  color: var(--color-heading);
+  color: var(--color-dim);
   max-width: 650px;
   margin-bottom: 4rem;
 }
@@ -218,10 +234,89 @@ body {
   transform: translateY(-3px);
 }
 
+/* ***** about section ***** */
+.about-section .about-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  padding-top: 2rem;
+  gap: 2rem;
+}
+
+.about-info .about-description {
+  font-family: var(--main-font);
+  line-height: 1.5;
+  font-size: var(--font-size-normal);
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.about-info .about-info-tech {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 0.89rem;
+  font-size: var(--font-size-small);
+}
+
+.about-info-tech ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.about-info-tech li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: var(--color-dim);
+}
+
+.ri-arrow-right-s-fill {
+  font-weight: bold;
+  color: var(--color-accent);
+  margin-right: 0.5rem;
+}
+
+.about-img-wrapper {
+  width: 100%;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.about-img-overlay {
+  width: 100%;
+  display: block;
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+}
+
+.about-img-wrapper::before {
+  content: "";
+  position: absolute;
+  border: 2px solid var(--color-accent);
+  border-radius: 5px;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  top: 15px;
+  left: 15px;
+  z-index: -1;
+  transition: border-color 0.3s;
+}
+
+.about-img-wrapper:hover::before {
+  border-color: var(--color-dim);
+}
+
 /* ***** footer styling ***** */
 .site-footer {
   text-align: center;
   padding: 4rem 0;
   font-size: var(--font-size-small);
-  color: var(--color-heading);
+  color: var(--color-dim);
 }
