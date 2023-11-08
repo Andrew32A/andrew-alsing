@@ -303,8 +303,7 @@ section {
 
 .about-img-overlay:hover {
   border-color: var(--color-dim);
-  /* make image grow a bit over 0.3 seconds */
-  transition: all 0.3s ease;
+  transition: border-color 0.3s ease;
 }
 
 /* ***** footer styling ***** */

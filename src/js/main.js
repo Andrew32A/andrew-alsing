@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 1200,
-    delay: anime.stagger(100, { start: 2500 }),
+    delay: anime.stagger(100, { start: 2000 }),
   });
 
   // social icons animation
@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     opacity: [0, 1],
     easing: "easeOutExpo",
     duration: 1200,
-    delay: anime.stagger(100, { start: 3000 }),
+    delay: anime.stagger(100, { start: 2500 }),
   });
 
   // name heading animation
@@ -53,8 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
     targets: ".name-heading span",
     opacity: [0, 1],
     easing: "easeOutExpo",
-    duration: 600,
-    delay: anime.stagger(100),
+    duration: 200,
+    delay: anime.stagger(80),
   });
 });
 
@@ -76,7 +76,7 @@ if (window.innerWidth > 500) {
       origin: "top",
       interval: 200,
       distance: "10px",
-      delay: 1500,
+      delay: 900,
     }
   );
 
