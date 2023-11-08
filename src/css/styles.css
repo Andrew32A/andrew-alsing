@@ -281,6 +281,7 @@ section {
 }
 
 .about-img-wrapper {
+  margin: 0 auto;
   width: 100%;
   position: relative;
   border-radius: 5px;
@@ -290,27 +291,20 @@ section {
 
 .about-img-overlay {
   width: 100%;
+  margin: 0 auto;
   display: block;
   max-width: 300px;
   max-height: 300px;
   object-fit: cover;
-}
-
-.about-img-wrapper::before {
-  content: "";
-  position: absolute;
   border: 2px solid var(--color-accent);
   border-radius: 5px;
-  width: calc(100% - 30px);
-  height: calc(100% - 30px);
-  top: 15px;
-  left: 15px;
-  z-index: -1;
-  transition: border-color 0.3s;
+  padding: 5px;
 }
 
-.about-img-wrapper:hover::before {
+.about-img-overlay:hover {
   border-color: var(--color-dim);
+  /* make image grow a bit over 0.3 seconds */
+  transition: all 0.3s ease;
 }
 
 /* ***** footer styling ***** */
