@@ -89,15 +89,24 @@ if (window.innerWidth > 500) {
     }
   );
 
-  sr.reveal(`.about-detail-left`, {
-    origin: "left",
-    interval: 300,
-  });
+  sr.reveal(
+    `.project-image-left,
+     .project-content-left`,
+    {
+      origin: "left",
+      interval: 300,
+    }
+  );
 
-  sr.reveal(`.about-detail-right`, {
-    origin: "right",
-    interval: 300,
-  });
+  sr.reveal(
+    `.project-image-right,
+     .project-content-right,
+     .about-img`,
+    {
+      origin: "right",
+      interval: 300,
+    }
+  );
 } else {
   sr.reveal(
     `.home-section,
