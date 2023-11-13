@@ -67,8 +67,7 @@ const sr = ScrollReveal({
 
 if (window.innerWidth > 500) {
   sr.reveal(
-    `
-    .main-heading,
+    `.main-heading,
      .subheading,
      .intro-text,
      .cta-btn`,
@@ -107,6 +106,12 @@ if (window.innerWidth > 500) {
       interval: 300,
     }
   );
+
+  sr.reveal(`.contact-btn`, {
+    origin: "top",
+    interval: 125,
+    distance: "10px",
+  });
 } else {
   sr.reveal(
     `.home-section,

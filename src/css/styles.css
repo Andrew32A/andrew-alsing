@@ -222,6 +222,7 @@ img {
 }
 
 .cta-btn {
+  text-align: center;
   width: 10.5rem;
   display: inline-block;
   background-color: var(--color-btn);
@@ -440,6 +441,35 @@ img {
 
 .icon:hover {
   color: var(--color-accent);
+}
+
+/* ***** contact section ***** */
+.contact-btn-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.contact-btn {
+  text-align: center;
+  width: 10.5rem;
+  display: inline-block;
+  background-color: var(--color-btn);
+  color: var(--color-btn-text);
+  padding: 1rem 2rem;
+  font-size: var(--font-size-normal);
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+  background-color: var(--color-accent);
+  color: var(--color-background);
+  transform: translateY(-3px);
 }
 
 /* ***** footer styling ***** */
