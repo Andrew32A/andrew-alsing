@@ -444,6 +444,10 @@ img {
 }
 
 /* ***** contact section ***** */
+.contact-heading {
+  margin-bottom: 2.8rem;
+}
+
 .contact-btn-wrapper {
   display: flex;
   justify-content: center;
