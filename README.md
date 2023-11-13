@@ -1,8 +1,8 @@
 # My Portfolio
 
-<h2 align="center"><a href="https://andrew32a.github.io/portfolio-page-styled/">Before</a></h3>
+<h2 align="center"><a href="https://andrew32a.github.io/portfolio-page-styled/">Before link</a></h3>
 
-<h2 align="center"><a href="https://andrew32a.github.io/andrew-alsing/">After</a></h3>
+<h2 align="center"><a href="https://andrew32a.github.io/andrew-alsing/">After link</a></h3>
 
 | Before                                                                                                                                     | After                                                                                                                            |
 | ------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------- |
