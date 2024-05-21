@@ -1,0 +1,62 @@
+[
+  {
+    "type": "Front End",
+    "title": "Typing Gym",
+    "description": "A minimalist <span class='highlight'>typing test</span> that uses randomly generated quotes from an api and contains backup offline-capabilities.",
+    "tech": ["JavaScript", "CSS", "HTML", "Anime.js", "API"],
+    "github": "https://github.com/Andrew32A/typing-gym",
+    "demo": "https://andrew32a.github.io/typing-gym/",
+    "image": "./public/images/typing-gym-screenshot.png",
+    "gif": "./public/images/typing-gym-demo.gif"
+  },
+  {
+    "type": "Game Development",
+    "title": "Netrunner",
+    "description": "Fast paced movement based <span class='highlight'>FPS game</span> inspired by games like Titanfall, Carlson, Ghostrunner and Super Hot. Includes wallrunning, modular tutorial system, and eye catching visuals.",
+    "tech": ["Unity", "C#", "WebGL"],
+    "github": "https://github.com/Andrew32A/netrunner",
+    "demo": "https://andrew32a.github.io/netrunner-webgl/",
+    "image": "./public/images/netrunner-screenshot.png",
+    "gif": "./public/images/netrunner-demo.gif"
+  },
+  {
+    "type": "Game Engine",
+    "title": "Raycast Engine",
+    "description": "Custom <span class='highlight'>raycast engine</span> to create a unique 2.5D environment with react landing page.",
+    "tech": ["React", "JavaScript", "CSS"],
+    "github": "https://github.com/Andrew32A/ray-cast-game",
+    "demo": "https://andrew32a.github.io/ray-cast-game/",
+    "image": "./public/images/raycast-engine-screenshot.png",
+    "gif": "./public/images/raycast-engine-demo.gif"
+  },
+  {
+    "type": "Data Visualization",
+    "title": "Digital Concert",
+    "description": "3D audio visualization using Three JS and Simplex Noise. Features <span class='highlight'>6,464 nodes</span> that dynamically change size and color in sync with the music.",
+    "tech": ["JavaScript", "Three.js", "Simplex Noise"],
+    "github": "https://github.com/Andrew32A/digital-concert",
+    "demo": "https://andrew32a.github.io/digital-concert/",
+    "image": "./public/images/digital-concert-screenshot.png",
+    "gif": "./public/images/digital-concert-demo.gif"
+  },
+  {
+    "type": "Game Development",
+    "title": "Tri to Survive",
+    "description": "Modern take on the old school classic game of <span class='highlight'>Astroids</span>.",
+    "tech": ["Unity", "C#", "WebGL"],
+    "github": "https://github.com/Andrew32A/tri-to-survive-webgl",
+    "demo": "https://andrew32a.github.io/tri-to-survive-webgl/",
+    "image": "./public/images/tri-to-survive-screenshot.png",
+    "gif": "./public/images/tri-to-survive-demo.gif"
+  },
+  {
+    "type": "NPM Package",
+    "title": "Eh to Zee Converter",
+    "description": "Custom <span class='highlight'>eslint plugin</span> that adds rules to check and convert Canadian English to American English and vice versa. Published to NPM for the public to download and use.",
+    "tech": ["TypeScript", "ESLint", "Jest"],
+    "github": "https://github.com/Andrew32A/eh-to-zee-converter",
+    "demo": "https://www.npmjs.com/package/eslint-plugin-eh-to-zee-converter",
+    "image": "./public/images/eh-to-zee-converter-screenshot.png",
+    "gif": "./public/images/eh-to-zee-converter-screenshot.png"
+  }
+]
