@@ -3,7 +3,7 @@ const nav = document.getElementsByClassName("site-nav")[0];
 let scrollHeight = 0;
 let width = window.innerWidth;
 
-// ***** project templates *****
+// ***** project template component *****
 document.addEventListener("DOMContentLoaded", function () {
   fetch("./src/data/projects.json")
     .then((response) => response.json())
@@ -107,6 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error fetching the projects:", error));
 });
+
 // ***** show/hide nav on scroll *****
 window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
@@ -130,7 +131,7 @@ window.addEventListener("scroll", () => {
   scrollHeight = scrollY;
 });
 
-/* ***** anime js animations ***** */
+// ***** anime js animations *****
 function initializeAnimations() {
   // navigation links animation
   anime({
@@ -161,7 +162,7 @@ function initializeAnimations() {
     delay: anime.stagger(80),
   });
 
-  /* ***** scroll reveal animations ***** */
+  // ***** scroll reveal animations *****
   const sr = ScrollReveal({
     distance: "100px",
     duration: 2400,
